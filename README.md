@@ -1,5 +1,5 @@
 # flipper-android-no-op
-No-op dependency when using Flipper Android in **release** mode.
+No-op dependency when using Flipper Android in **release** mode. Upgraded theGlenn's repo with database implementations.
 
 [![](https://jitpack.io/v/theGlenn/flipper-android-no-op.svg)](https://jitpack.io/#theGlenn/flipper-android-no-op)
 ![GitHub](https://img.shields.io/github/license/theglenn/flipper-android-no-op.svg)
@@ -20,17 +20,17 @@ allprojects {
 
 dependencies {
     //The important part
-    def flipper_version = '0.35.0'
+    def flipper_version = '0.87.0'
     debugImplementation "com.facebook.flipper:flipper:$flipper_version"
     debugImplementation "com.facebook.flipper:flipper-network-plugin:$flipper_version"
     debugImplementation 'com.facebook.soloader:soloader:0.8.2'
 
     // Include `flipperandroidnoop` and  `soloadernoop` individually
-    releaseImplementation 'com.github.theGlenn.flipper-android-no-op:flipperandroidnoop:0.4.0'
-    releaseImplementation 'com.github.theGlenn.flipper-android-no-op:soloadernoop:0.4.0'
+    releaseImplementation 'com.github.kobeumut.flipper-android-no-op:flipperandroidnoop:0.87.0'
+    releaseImplementation 'com.github.kobeumut.flipper-android-no-op:soloadernoop:0.87.0'
 
     // Includes both libraries
-    releaseImplementation 'com.github.theGlenn:flipper-android-no-op:0.4.0'
+    releaseImplementation 'com.github.kobeumut:flipper-android-no-op:0.87.0'
 }
 ```
 
